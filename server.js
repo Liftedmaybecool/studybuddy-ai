@@ -31,6 +31,7 @@ app.post('/api/chat', async (req, res) => {
       ],
       max_tokens: 1500,
       temperature: 0.7,
+      stream: false,
     });
 
     const reply = completion.choices[0].message.content;
